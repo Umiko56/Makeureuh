@@ -1,3 +1,4 @@
+![logo](img.jpg)
 # Makeureuh
 Makefile generator
 
