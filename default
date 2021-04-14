@@ -2,9 +2,9 @@
 
 PROJECT             = PROJECT_NAME
 BUILD_D             ?= BUILD_DIR
-APP_BIN             = $(BUILD_DIR)/$(PROJECT)
+APP_BIN             = $(BUILD_D)/$(PROJECT)
 APP_SOURCES         = $(shell find SRC_DIR -name '*.c')
-APP_OBJS            = $(patsubst %.c,$(BUILD_DIR)/%.o,$(APP_SOURCES))
+APP_OBJS            = $(patsubst %.c,$(BUILD_D)/%.o,$(APP_SOURCES))
 COMMON_CFLAGS       = -IINCLUDE_DIR/ CUSTOM_FLAGS
 CFLAGS              += $(COMMON_CFLAGS)
 CFLAGS              += $(COMMON_CFLAGS)
