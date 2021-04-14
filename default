@@ -27,7 +27,7 @@ $(APP_BIN): $(APP_OBJS)
 	$(SHOW_CC) $@
 	$(SILENCE)$(CC) -o $@ $(APP_OBJS)
 
-$(BUILD_DIR)/%.o: %.c
+$(BUILD_D)/%.o: %.c
 	$(SHOW_CC) $@
 	$(SILENCE)mkdir -p $(dir $@)
 	$(SILENCE)$(CC) $(CFLAGS) -c $< -o $@
